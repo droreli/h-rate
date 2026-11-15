@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H-Rate Support</title>
+<meta name="description" content="H-Rate shows your heart rate on your Apple Watch face, in color, with trends and history. Support and contact.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --fg: #1c1c1e; --muted: #5f6368; --accent: #e0245e; --card: #f4f4f6; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0a0e1a; --fg: #f2f2f7; --muted: #a1a1aa; --accent: #ff4f86; --card: #151b2e; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; gap: 16px; align-items: center; }
+  header img { width: 72px; height: 72px; border-radius: 50%; }
+  h1 { font-size: 30px; margin: 0; }
+  h2 { font-size: 19px; margin: 32px 0 8px; color: var(--accent); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  .card { background: var(--card); border-radius: 14px; padding: 14px 16px; margin: 10px 0; }
+  .card b { display: block; margin-bottom: 4px; }
+  section[lang="he"] { direction: rtl; text-align: right; border-top: 1px solid color-mix(in srgb, var(--muted) 30%, transparent); margin-top: 40px; padding-top: 24px; }
+  footer { margin-top: 40px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<section lang="en">
+  <header>
+    <img src="icon.png" alt="H-Rate app icon">
+    <div>
+      <h1>H-Rate</h1>
+      <div class="muted">Your heart rate on your watch face, in color.</div>
+    </div>
+  </header>
+
+  <h2>Contact</h2>
+  <p>Questions, problems or ideas: <a href="mailto:droreli@gmail.com?subject=H-Rate">droreli@gmail.com</a></p>
+
+  <h2>Common questions</h2>
+  <div class="card"><b>How do I add H-Rate to my watch face?</b>Touch and hold the watch face, tap Edit, swipe to the complications screen, tap a corner and choose H-Rate. Press the Digital Crown to save.</div>
+  <div class="card"><b>Why is the number not updated every minute?</b>watchOS decides how often complications refresh, usually every 15 to 30 minutes. Open the app, or tap the number in the app to take a fresh reading.</div>
+  <div class="card"><b>The number is gray. Why?</b>The reading is more than 30 minutes old. Gray means "not current", so you never mistake an old value for a new one.</div>
+  <div class="card"><b>I see no data.</b>On the watch, open Settings › Health › Data Access and check that H-Rate may read heart data. Wear the watch snugly for a while.</div>
+  <div class="card"><b>Does "measure now" add a workout?</b>No. H-Rate runs a short sensor session and discards it. No workout and no exercise minutes are saved.</div>
+  <div class="card"><b>Is H-Rate a medical device?</b>No. It shows readings your Apple Watch already takes and does not diagnose any condition. Colors are for display only.</div>
+
+  <h2>Privacy</h2>
+  <p>Nothing leaves your watch. No account, no server, no analytics, no ads. Read the <a href="privacy.html">privacy policy</a>.</p>
+</section>
+
+<section lang="he">
+  <h1>H-Rate</h1>
+  <p class="muted">הדופק שלך בלוח השעון, בצבע.</p>
+
+  <h2>יצירת קשר</h2>
+  <p>שאלות, תקלות או רעיונות: <a href="mailto:droreli@gmail.com?subject=H-Rate">droreli@gmail.com</a></p>
+
+  <h2>שאלות נפוצות</h2>
+  <div class="card"><b>איך מוסיפים את H-Rate ללוח השעון?</b>לחיצה ארוכה על הלוח, "עריכה", החלקה למסך הסיבוכים, הקשה על פינה ובחירת H-Rate. לחיצה על הכתר לשמירה.</div>
+  <div class="card"><b>למה המספר לא מתעדכן כל דקה?</b>watchOS קובעת באיזו תדירות סיבוכים מתעדכנים, בדרך כלל כל 15–30 דקות. אפשר לפתוח את האפליקציה, או להקיש על המספר באפליקציה למדידה חדשה.</div>
+  <div class="card"><b>המספר אפור. למה?</b>המדידה ישנה מ־30 דקות. אפור אומר "לא עדכני", כדי שלא תתבלבל בין ערך ישן לחדש.</div>
+  <div class="card"><b>"מדוד עכשיו" מוסיף אימון?</b>לא. H-Rate מפעיל את החיישן לכמה שניות ומבטל. לא נשמר אימון ולא נוספות דקות אימון.</div>
+  <div class="card"><b>H-Rate הוא מכשיר רפואי?</b>לא. הוא מציג מדידות שהשעון כבר עושה ואינו מאבחן שום מצב.</div>
+
+  <h2>פרטיות</h2>
+  <p>שום דבר לא יוצא מהשעון. <a href="privacy.html">מדיניות הפרטיות</a>.</p>
+</section>
+
+<footer class="muted">© 2026 H-Rate</footer>
+</main>
+</body>
+</html>
